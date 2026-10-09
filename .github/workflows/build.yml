@@ -18,7 +18,7 @@ jobs:
         run: git clone --depth 1 https://github.com/Elecrow-RD/CrowPanel-Advanced-9inch-ESP32-P4-HMI-AI-Display-1024x600-IPS-Touch-Screen.git vendor
       - name: Prepare sketch and bundled hardware libraries
         run: |
-          python prepare.py
+          python Elecrow_Notebook_Cloud_V12/Elecrow_Notebook_Cloud/prepare.py
           mkdir -p "$HOME/Arduino/libraries"
           cp -a vendor/example/V1.2/Arduino_Code/libraries/. "$HOME/Arduino/libraries/"
       - name: Install Arduino CLI
